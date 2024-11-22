@@ -2,13 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta keywords="gestion, sistemas,quinto">
-
-    <meta aria-checked="UTF-8">
-
-    <title>Mi appa</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gestion, sistemas, quinto">
+    <title>Mi Primera Página</title>
     <link rel="stylesheet" href="web.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
 
@@ -16,69 +15,76 @@
     <header>
         <h1>Bienvenidos a mi primera página</h1>
     </header>
-    <main>
-        <div>
-            <h2>Mis datos</h2>
-            <p>
-                Me llamo Gilson Ariel Jami Tercero, tengo 27 años, toda mi vida he crecido en el cantón Salcedo.
-                Me encuentro cursando 5to semestre de la carrera de Ingeniería en Sistemas de Información en la
-                Universidad Técnica de Cotopaxi.
 
-                Mi frase motivadora es: "Las oportunidades son para quienes se atreven a actuar y no solo a soñar."
-            </p>
-            <h2>Imagen</h2>
-            <img src="https://cdn.prod.website-files.com/67225d1eb9685dfcba779ca6/6722a0815290ecdd2972972e_004.jpg" width="200">
-            <p>
-                Me dedico al servicio técnico de reparación y distribución de repuestos de celulares y computadoras.
-            </p>
+    <main>
+        <!-- Sección Mis Datos -->
+        <section class="custom-section">
+            <h2>Mis Datos</h2>
+            <div class="content">
+                <p>
+                    Me llamo **Gilson Ariel Jami Tercero**, tengo 27 años y he vivido toda mi vida en el cantón Salcedo.
+                    Actualmente curso el 5to semestre de Ingeniería en Sistemas de Información en la Universidad Técnica
+                    de Cotopaxi.
+                </p>
+                <p>
+                    Mi frase motivadora es: **"Las oportunidades son para quienes se atreven a actuar y no solo a soñar."**
+                </p>
+                <img src="https://cdn.prod.website-files.com/67225d1eb9685dfcba779ca6/6722a0815290ecdd2972972e_004.jpg" alt="Foto personal" width="200">
+            </div>
+        </section>
+
+        <section class="custom-section">
+            <h2>Mis inicios</h2>
+            <div class="content">
+                <p>
+                    Fui asistente de técnico por 4 meses en repracion de celulares en el año 2019, desde ese entonces me agrado 
+                    el mantenimiento y servicio a los celulares, contando su parte de accesorios y repuestos tanto en su forma
+                    de adquisicion y distribucion de productos  
+                </p>
+                <img src="https://thcel.com/wp-content/uploads/2023/08/pantallas-de-celulares-mayoreo-iPhone-1.jpg" alt="Foto personal" width="200">
+            </div>
+        </section>
+
+        <!-- Sección Servicio Técnico -->
+        <section class="custom-section">
             <h2>Servicio Técnico</h2>
-            <img src="https://st3.depositphotos.com/1010613/14045/i/450/depositphotos_140458762-stock-photo-technician-fixing-cellphone.jpg" width="400">
-        </div>
-        <div>
+            <div class="content">
+                <p>
+                    Me dedico al servicio técnico de reparación y distribución de repuestos de celulares y computadoras.
+                </p>
+                <img src="https://st3.depositphotos.com/1010613/14045/i/450/depositphotos_140458762-stock-photo-technician-fixing-cellphone.jpg" alt="Servicio Técnico" width="250">
+            </div>
+        </section>
+
+        <!-- Sección Local Comercial -->
+        <section class="custom-section">
             <h2>Local Comercial</h2>
-            <p>
-                El local se encuentra ubicado en la ciudad de Salcedo.
-            </p>
-            <iframe
-                src="https://lh5.googleusercontent.com/p/AF1QipOTCDajAtIwxMaVPiiMKJoGlAsuziW8V_RqFVwN=w408-h408-k-no"
-                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+            <div class="content">
+                <p>
+                    Mi local se encuentra ubicado en la ciudad de Salcedo. Aquí está nuestra ubicación exacta:
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.914218038697!2d-78.588822!3d-1.0430274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d47debfa0fb465%3A0x7c4693523b891cfe!2sJamilter%20Celulares%20y%20Computadoras!5e0!3m2!1ses!2sec!4v1692714287283!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
     </main>
+
     <footer>
         <h2>Redes Sociales</h2>
         <div class="social-links">
-            <a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a>
-            <a href="https://wa.me/593999009090" target="_blank">WhatsApp</a>
-            <a href="https://www.instagram.com/jamilter_arson?igsh=eHRqaXFsOW0weDJk&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/593999009090" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/jamilter_arson?igsh=eHRqaXFsOW0weDJk&utm_source=qr" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
         </div>
     </footer>
-    
-    <style>
-        footer {
-            background-color: #1b86cd;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 0px;
-            font-size: 0.9em;
-        }
-    
-        .social-links {
-            display: flex; /* Usa flexbox para posicionar los enlaces horizontalmente */
-            justify-content: center; /* Centra los elementos horizontalmente */
-            gap: 20px; /* Añade espacio entre los enlaces */
-        }
-    
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-    
-        .social-links a:hover {
-            text-decoration: underline; /* Efecto al pasar el ratón */
-        }
-    </style>
+</body>
 
 </html>
