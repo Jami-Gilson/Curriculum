@@ -86,3 +86,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
 }
+.boton1{
+    padding: 20px;
+    background: linear-gradient(135deg, #547c98, #d5d5e2c8);
+}
