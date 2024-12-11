@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>SEMAFORO</h1>
+    </header>
+
+    <div class="row">
+        <div class="col-md-4" id="col1" style="background-color: red; border-radius: 50%; width: 200px; height: 200px;"></div>
+        <div class="col-md-4" id="col2" style="background-color: yellow; border-radius: 50%; width: 200px; height: 200px;"></div>
+        <div class="col-md-4" id="col3" style="background-color: green; border-radius: 50%; width: 200px; height: 200px;"></div>
+
+    </div>
+    <button onclick="cambia('col1','red','col2','col3','black')"> rojo</button>
+    <button onclick="cambia('col2','yellow','col1','col3','black')">amarillo</button>
+    <button onclick="cambia('col3','green','col1','col2','black')">verde</button>
+    <button onclick="window.location.href='index2.html'">regresar</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function cambia(id1,color,id2,id3, cn){
+            const c1 = document.getElementById(id1);
+            c1.style.backgroundColor = color;
+
+            const c2 = document.getElementById(id2);
+            c2.style.backgroundColor = cn;
+
+            const c3 = document.getElementById(id3);
+            c3.style.backgroundColor = cn;
+        }
+    </script>
+
+
+</body>
+
+</html>
