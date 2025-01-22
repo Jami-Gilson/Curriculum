@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Calles */
+.calle_horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150%;
+    height: 130px; /* Altura de la calle */
+    background-color: #333;
+    transform: translateY(-50%);
+    z-index: 1; /* Coloca las calles en el fondo */
+}
+
+.calle_vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 130px; /* Ancho de la calle */
+    height: 120%;
+    background-color: #333;
+    transform: translateX(-50%);
+    z-index: 1; /* Coloca las calles en el fondo */
+}
+
+/* Rayas amarillas horizontales entrecortadas */
+.raya_horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%; /* Extiende a lo largo de la calle */
+    height: 10px; /* Altura de la raya */
+    background: repeating-linear-gradient(
+        to right,
+        yellow 0,
+        yellow 30px, /* Tamaño del tramo amarillo */
+        transparent 30px,
+        transparent 60px /* Espacio entre rayas */
+    );
+    transform: translateY(-50%);
+    z-index: 2; /* Coloca las rayas sobre las calles */
+}
+
+/* Rayas amarillas verticales entrecortadas */
+.raya_vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px; /* Ancho de la raya */
+    height: 100%; /* Extiende a lo largo de la calle */
+    background: repeating-linear-gradient(
+        to bottom,
+        yellow 0,
+        yellow 30px, /* Tamaño del tramo amarillo */
+        transparent 30px,
+        transparent 60px /* Espacio entre rayas */
+    );
+    transform: translateX(-50%);
+    z-index: 2; /* Coloca las rayas sobre las calles */
+}
+
+.cuadrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px; /* Igual al ancho de la calle vertical */
+    height: 130px; /* Igual a la altura de la calle horizontal */
+    background-color: #333; /* Mismo color que las calles */
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Coloca el cuadro sobre las rayas */
+}
+
+/* Semáforos */
+.Semaforo1, .Semaforo2, .Semaforo3, .Semaforo4 {
+    position: absolute; /* Posicionarlos en las esquinas */
+    background-color: black;
+    width: 70px; /* Reducir ancho */
+    height: 150px; /* Reducir altura */
+    display: flex;
+    flex-direction: column;
+    padding: 8px; /* Ajustar espacio interno */
+    border-radius: 15px;
+    z-index: 3; /* Coloca los semáforos por encima de las calles y rayas */
+}
+
+/* Posición de los semáforos */
+.Semaforo1 {
+    top: 38%;
+    left: 3%;
+}
+
+.Semaforo2 {
+    top: 1%;
+    right: 47%;
+}
+
+.Semaforo3 {
+    bottom: 18%;
+    left: 47%;
+}
+
+.Semaforo4 {
+    bottom: 38%;
+    right: 3%;
+}
+
+/* Focos */
+.foco {
+    opacity: 0.3; /* Foco apagado */
+    background-color: rgb(35, 35, 35);
+    height: 40px; /* Reducir tamaño del foco */
+    width: 40px; /* Reducir tamaño del foco */
+    margin: 5px auto; /* Reducir margen */
+    border-radius: 50%;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.foco.rojo.active {
+    opacity: 1;
+    background-color: red;
+}
+
+.foco.amarillo.active {
+    opacity: 1;
+    background-color: yellow;
+}
+
+.foco.verde.active {
+    opacity: 1;
+    background-color: darkgreen;
+}
